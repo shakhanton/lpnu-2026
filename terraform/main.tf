@@ -1,13 +1,13 @@
 #course та author
 
 module "table_course" {
-  source = "./modules/dynamodb"
+  source  = "./modules/dynamodb"
   context = module.label.context
-  name = "course"
+  name    = "course"
 }
 
 module "table_author" {
-  source = "./modules/dynamodb"
+  source  = "./modules/dynamodb"
   context = module.label.context
-  name = "author"
+  name    = "author"
 }
